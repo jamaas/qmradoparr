@@ -1,0 +1,21 @@
+Package: qmradoparr
+Title: Food Quantitative Microbial Risk Analysis R package
+Version: 0.1
+Authors@R: person("James", "Maas", email = "jimmaasuk@gmail.com", role = c("aut", "cre"))
+Description: A package to do QMRA calculations in parallel.
+Depends: R (>= 3.4.1)
+License: open
+Encoding: UTF-8
+LazyData: true
+Collate:
+    'auxillary.functions.R'
+    'total.dose.R'
+    'parallel.calcs.R'
+Imports:
+    abind,
+    doParallel,
+    foreach,
+    FAdist,
+    msm,
+    zoo
+RoxygenNote: 6.0.1
