@@ -19,8 +19,10 @@ khf <- function (x) 1-prod(1-x)
 #' @param probability.infection.alpha alpha parameter for beta.poisson model
 #' @export prob.infection.beta.poisson
 
-prob.infection.beta.poisson <- function (probability.infection.beta,
-                       probability.infection.alpha, ...) {
+prob.infection.beta.poisson <- function (total.dose.params,
+                                         probability.infection.beta,
+                                         probability.infection.alpha,
+                                         ...) {
     ## Calculate the total dose from all four food groups
     Dose <- do.call(total.dose, total.dose.params)
 

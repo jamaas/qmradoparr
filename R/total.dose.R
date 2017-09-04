@@ -7,9 +7,7 @@
 #' @export total.dose
 
 total.dose <- function (run.oyster.model, pathogen.viable.variability.switch, ...) {
-    ifelse (run.oyster.model,
-            total.oyster.dose <- rnorm(1, mean=0.45, sd=0.1),
-            total.oyster.dose <- 0)
+    total.oyster.dose <- `if`(run.oyster.model, rnorm(1, mean=0.45, sd=0.1), 0)
 }
 
 
