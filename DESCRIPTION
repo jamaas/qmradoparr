@@ -3,7 +3,7 @@ Title: Food Quantitative Microbial Risk Analysis R package
 Version: 0.1
 Authors@R: person("James", "Maas", email = "jimmaasuk@gmail.com", role = c("aut", "cre"))
 Description: A package to do QMRA calculations in parallel.
-Depends: R (>= 3.4.1)
+Depends: R (>= 3.4.0)
 License: open
 Encoding: UTF-8
 LazyData: true
